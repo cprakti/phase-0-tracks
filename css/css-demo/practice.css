@@ -12,3 +12,11 @@
 .li-size {
   font-size: .8em;
 }
+
+li:first-child {
+  color: orange;
+}
+
+section#volunteer-experience section.volunteer-gig{
+  color: red;
+}
