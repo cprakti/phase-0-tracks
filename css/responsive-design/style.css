@@ -32,15 +32,36 @@ figcaption {
 }
 
 body {
-  width: 960px;
 }
 
 main {
-  width: 756px;
+  padding: 10px;
   float: right;
+  min-width: 40%;
+  max-width: 70%
 }
 
 #external-links {
 width: 200px;
 float: left;
+max-width: 20%;
+min-width: 10%;
+}
+
+/*@media screen and (max-width: 500px) {
+  body {
+    background-color: hotpink;
+  }
+}*/
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  img {
+    width: 80%;
+  }
 }
