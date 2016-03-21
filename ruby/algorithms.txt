@@ -1,0 +1,11 @@
+Elevator Algorithm
+Walk to elevator button console
+  If you are trying to go up
+    Press the up button
+  Else
+    Press the down button
+  When the elevator door opens
+    walk inside
+  On the button console inside the elevator, press the button that corresponds with the floor you want
+  Wait until the elevator arrives at your floor and the doors open
+  Walk out of the elevator
