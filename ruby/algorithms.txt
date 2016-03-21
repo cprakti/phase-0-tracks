@@ -10,6 +10,8 @@ Elevator Algorithm
   Wait until the elevator arrives at your floor and the doors open
   Walk out of the elevator
 
+
+
 Make Coffee Algorithm
   Locate the coffee maker
   If all materials are not present
@@ -28,3 +30,4 @@ Make Coffee Algorithm
   Place new filter in coffee maker
   Pour corresponding amount of coffee grounds on top of filter
   Press button to begin brewing
+
