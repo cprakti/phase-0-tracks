@@ -1,0 +1,33 @@
+Elevator Algorithm
+  Walk to elevator button console
+  If you are trying to go up
+    Press the up button
+  Else
+    Press the down button
+  When the elevator door opens
+    walk inside
+  On the button console inside the elevator, press the button that corresponds with the floor you want
+  Wait until the elevator arrives at your floor and the doors open
+  Walk out of the elevator
+
+
+
+Make Coffee Algorithm
+  Locate the coffee maker
+  If all materials are not present
+    locate filter, coffee grounds, and water
+  Else
+    proceed
+  If old coffee is present in pot
+    Pour out old coffee and rinse pot
+  If old coffee grounds and filter are present
+    Throw away old coffee filter and grounds
+  If off
+    Turn on coffee maker
+  Decide the amount of coffee intended to make
+  Fill pot with corresponding amount of water
+  Pour water into coffee maker water reservoire
+  Place new filter in coffee maker
+  Pour corresponding amount of coffee grounds on top of filter
+  Press button to begin brewing
+
