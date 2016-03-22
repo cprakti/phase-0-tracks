@@ -64,3 +64,4 @@ def decrypt(word)
 end
 
 interface
+
