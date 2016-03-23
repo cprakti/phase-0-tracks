@@ -1,11 +1,7 @@
-puts "What is your first name?"
-first = gets.chomp
+puts "What is your first and last name?"
+full = gets.chomp.downcase
+puts full
 
-puts "What is your last name?"
-last = gets.chomp
-
-full_name = first + " " + last
-puts full_name
 
 puts "How old will you be on Dec 31st, 2016?"
 age = gets.chomp.to_i
@@ -16,28 +12,39 @@ num = 2016 - year
 
 
 puts "Our cafeteria makes some fantastic garlic bread.  Would you like me to order you some?"
-  gar_answer = gets.chomp
-  if gar_answer == "yes" || "Yes"
+  gar_answer = gets.chomp.downcase
+  if gar_answer == "yes"
     garlic = true
-  else
+  elsif gar_answer == "no"
     garlic = false
+  else
   end
 
 puts "Would you like to enroll in the company health insurance plan?"
-  ins_answer = gets.chomp
-  if ins_answer == "yes" || "Yes"
+  ins_answer = gets.chomp.downcase
+  if ins_answer == "yes"
     insurance = true
   else
     insurance = false
   end
 
-if ((age == num) && (garlic == true))
-  puts "Probably not a vampire."
-elsif ((age != num) && ((garlic == false) || (insurance == false)))
-  puts "Probably a vampire."
-elsif ((age != num) && ((garlic == false) && (insurance == false)))
-  puts "Almost certainly a vampire."
-elsif (full_name == "Drake Cula" || full_name == "Tu Fang")
-  puts "Definitely a vampire."
-else puts "Results inconclusive."
+#    puts full
+#    puts age
+#    puts num
+#    puts gar_answer
+#    puts garlic
+#    puts ins_answer
+#    puts insurance
+
+
+if age == num && (garlic == true || insurance == true) && !(full == "tu fang" || full == "drake cula")
+    puts "Probably not a vampire."
+elsif age != num && !(garlic == true && insurance == true) && !(garlic == false && insurance == false) && !(full == "tu fang" || full == "drake cula")
+    puts "Probably a vampire."
+elsif (age != num && garlic != true && insurance != true) && !(full == "tu fang" || full == "drake cula")
+    puts "Almost certainly a vampire."
+elsif  (full == "tu fang" || full == "drake cula")
+    puts "Definitely a vampire."
+else
+    puts "Not sure"
 end
