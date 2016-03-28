@@ -1,0 +1,55 @@
+Variables
+1. What is a variable? Why might a programmer use a variable?
+- A variable is a structure that can store information that you provide.  Variables can contain different types of information like strings, integers, or Booleans.  Once stored, the information contained in a variable can be recalled by typing the variable’s name.
+
+
+2. If the value of first_name is "Abraham" and last_name is "Lincoln", explain the order in which Ruby will run the line full_name = first_name + last_name, and what the final result will be.
+- Ruby will define a variable named “full_name” whose value will be the sum of the values of the variables first_name and last_name.  With the retrieved values “Abraham” and “Lincoln”, Ruby will will add “Lincoln” after the last character in the string “Abraham.”  Ruby now has created a new variable and a new value: full_name = “AbrahamLincoln”
+
+Data Types
+3. For each of the following data types, write a short definition and give at least one example of when you might use the data type in a program. (Don't use an example we've already provided.)
+
+- string – a string is one or more characters that Ruby can manipulate without understanding their human meaning.  An example of a string is “apple” – ruby can manipulate each character in that string but it does not put any value on apple.
+
+- Integer – an integer is a positive or negative whole number that Ruby recognizes as having numeric value.  An example would be 5.
+
+- Float – a float is a number with a decimal value, e.g. 4.5.
+
+- Nil – nil is how the idea of nothing is represented.  If a variable has a nil value, it means it contains nothing.  If the variable apple contains no value, it’s said to have a nil value.
+
+- Boolean – a Boolean is a value that is either true or false, e.g. True
+
+Algorithms
+4. What is an algorithm?
+- An algorithm is a process that gives a step-by-step instructions on how to solve a particular problem.
+
+5. What are two common categories of algorithm in computer science?
+- Graph and sequence are two main categories of algorithms.
+
+Methods
+6. What is a method? Why might a programmer choose to use a method?
+- A method is a tool or procedure that allows certain types of tasks to be automated by the computer.  Often methods take in outside information and perform a certain action to create a new output.  Programmers use methods to allow the computer to handle certain tasks when supplied with input data.
+
+7. Define the following terms as they relate to a method.
+- return value – The return value is the output the method creates after being supplied input and completing its procedure.
+- side effect – A side effect is an instance where the output of one method unintentionally affects that value of another variable or method.
+- parameter – A parameter is a representation of something that you will give method when you try to run it.
+- argument – An argument is the actual input that you give the method when you are trying to run it.
+- implicit return – Ruby returns the value of the last evaluated expression, so an implicit return is a way of printing the last part of a method without typing “return” explicitly.
+
+8. What are global scope and method scope? How do those scopes impact the availability of data at different points in a program?
+- Global scope is the visibility of the code such that this variable is accessible anywhere and everywhere.  If a variable is defined with a global scope it will be accessible anywhere.  Method scope is the visibility of a variable such that it is only accessible within the method.
+
+
+Control Flow
+9. What is control flow? Why might a programmer choose to use flow control?
+- Control flow is the ability to control how the code reacts based on user input.  A programmer might use flow control to return different values based upon the input of the user.  For example, if the user inputs a response that doesn’t make sense in the context of the prompt or program, control flow can prompt the user to respond again in a way that the computer expects and can understand.
+
+10. Define the following terms as they relate to flow control.
+- loop – a loop causes a certain part of code to be repeated until a condition is met.
+- if – if is a conditional that will execute a certain part of code if the criteria are met.
+- else – else is the other part of a conditional that specifies what should happen if certain criteria are not met.
+- elsif – elsif is an additional part of a conditional where another set of criteria (other than the if criteria) can be specified.  If these other criteria are met, a separate part of code will be run
+- while – while is a type of loop that specifies that a certain code block should be repeated while a certain relationship exists.
+- until – until is a different type of loop that specifies that a certain code block should be repeated until this relationship is no longer the case.
+
