@@ -7,7 +7,7 @@ apartment_building = {
         "Kathy",
         "Tommy",
         "Erica"
-      ]
+      ],
       pets: 2
     },
     apartment_1b: {
@@ -19,9 +19,8 @@ apartment_building = {
         "Sharod",
         "Emily",
         "Chris"
-      ]
+      ],
       pets: 0
-    }
     },
   },
   second_floor: {
@@ -31,18 +30,16 @@ apartment_building = {
       names: [
         "Kelly",
         "Austin"
-      ]
+      ],
       pets: 4
-    }
     },
     apartment_2b: {
       family: "Trump",
       num_residents: 1,
       names: [
         "Donald"
-      ]
+      ],
       pets: 1
-    }
     },
   },
   third_floor: {
@@ -53,9 +50,8 @@ apartment_building = {
         "Bill",
         "Hillary",
         "Guest"
-      ]
+      ],
       pets: 3
-    }
     },
     apartment_3b: {
       family: "Bernie",
@@ -67,13 +63,12 @@ apartment_building = {
         "Gerney",
         "Journey",
         "Ted"
-      ]
+      ],
       pets: 20
-    }
     }
   }
 }
 
-p apartment_building[first_floor][apartment_1a][names]
-p apartment_building[second_floor][apartment_2a]
-p apartment_building[third_floor][apartment_3b][pets]
+p apartment_building[:first_floor][:apartment_1a][:names]
+p apartment_building[:second_floor][:apartment_2a]
+p apartment_building[:third_floor][:apartment_3b][:pets]
