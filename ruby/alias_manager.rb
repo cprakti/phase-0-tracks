@@ -6,12 +6,16 @@ first = gets.chomp.downcase
 puts "What is your last name?"
 # Store spy's real last name
 last = gets.chomp.downcase
-
 # Test
-puts first
-puts last
-
+#puts "Your name is #{first} #{last}."
 # Swap first name and last name
-
+first, last = last, first
+# Test
+#puts "Your scrambled name is #{first} #{last}."
 # Change vowels to next vowel (aeiou)
+first_array = first.split('').to_a
+# Test
+# p first_array
+p first_array.select { |letter| letter =~ /[aeiou]/ }
+
 # Change consonants to next consonant
