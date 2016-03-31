@@ -73,3 +73,7 @@ apartment_building = {
     }
   }
 }
+
+p apartment_building[first_floor][apartment_1a][names]
+p apartment_building[second_floor][apartment_2a]
+p apartment_building[third_floor][apartment_3b][pets]
