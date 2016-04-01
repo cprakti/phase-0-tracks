@@ -1,12 +1,17 @@
-puts "Welcome to the alias creator. Make as many aliases as you would like, and when you are finished type 'exit'.\nPress any key to continue."
+alias_hash = {}
+puts "\n"
+puts "Welcome to the alias creator. Make as many aliases as you would like, and when you are finished type 'exit'.\n\nPress enter to continue."
 gets
-# Test p user_resp = ''
+user_resp = ''
 until user_resp == 'exit' # Loop until user types exit
   puts "What is your first name?" # Ask spy real's first name
   first = gets.chomp.downcase # Store spy's real first name
+  puts "\n"
   puts "What is your last name?" # Ask spy real's last name
   last = gets.chomp.downcase # Store spy's real last name
+  puts "\n"
   # Test puts "Your name is #{first} #{last}."
+  real_full = first.capitalize + ' ' + last.capitalize
 
   first, last = last, first # Swap first name and last name
   # Test puts "Your scrambled name is #{first} #{last}."
@@ -24,6 +29,13 @@ until user_resp == 'exit' # Loop until user types exit
   alias_full = alias_first.capitalize + " " + alias_last.capitalize # Create capitalized version of full alias
 
   puts "Your new alias is #{alias_full}"
-  puts "Would you like to make a new alias?"
-  # Test p user_resp = gets.chomp.downcase
+  puts "\n"
+  puts "Press enter to create a new alias or type 'exit' to quit."
+  user_resp = gets.chomp.downcase
+  puts "\n"
+
+  alias_hash[real_full] = alias_full
 end
+
+puts "Here are the aliases you created:"
+alias_hash.each {|real_full, alias_full| puts "#{real_full} is #{alias_full}." }
