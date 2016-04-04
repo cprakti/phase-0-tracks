@@ -35,7 +35,7 @@ If you were to have a hash of cars and their prices, iteration would allow you t
 Blocks
 8. What is a block?
 
-
+Blocks are code that can be passed to a method.  For the #each method, blocks specify what code should be iterated on each item within the data structure.
 
 9. What is a block parameter, and where does its value come from?
-
+A block parameter informs the block of the format that incoming values will have.  If a block's parameter is |x|, then the block will consider all values as separate entities.  If a block's parameter is |x, y|, then the block will consider incoming arrays as pairs.
