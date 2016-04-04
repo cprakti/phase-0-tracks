@@ -1,3 +1,4 @@
+# 6.1 Introduction to Classes
 # Breed -----------------------------------------
 # Mother's breed:
 # Father's breed:
