@@ -1,34 +1,36 @@
 Data Structures
 1. Why are data structures useful in programming?
 
-
+Data structures are useful for storing data in a meaningful and efficient way.  Large amounts of data can be saved and accessed in a logical way.
 
 Arrays
 2. Define "array" and describe the characteristics of an array.
 
-
+An array is a data structure that can store a group of objects.  Arrays are zero-indexed which means that an object that is stored can be accessed by using its index as a key.  Arrays can also store strings, fixnums, or even other arrays or hashes.
 
 3. Give two original examples of data sets that an array might be well-suited for.
 
-
+Neighborhoods in New York could be an array
+Planets in the solar system could be another array
 
 Hashes
 4. Define "hash" and describe the characteristics of a hash.
 
-
+A hash is another data structure that stores objects; however, unlike arrays, hashes require keys as well as values.  Whereas arrays are zero-indexed, hashes allow you to create keys for the values you are storing.  Instead of using an object's index to access it, hashes allow you to use a symbol as a key to access any particular value.
 
 5. Give two original examples of data sets that a hash might be well-suited for.
 
-
+One hash could be college courses and the textbook it requires
+Another hash could be cars and their prices
 
 Iteration
 6. Why is iteration useful?
 
-
+Iteration allows you to perform a task to each object within a data structure.  Instead of writing repetitive lines of code for each object, iteration allows you to specify a task to be performed on all objects with an array or hash.
 
 7. Give an example of a real-life task that would require iteration if you wrote an algorithm for it.
 
-
+If you were to have a hash of cars and their prices, iteration would allow you to add the additional tax amount for each car in the hash.
 
 Blocks
 8. What is a block?
