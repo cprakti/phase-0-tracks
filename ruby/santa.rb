@@ -1,3 +1,4 @@
+
 class Santa
   attr_reader :gender, :ethnicity
   attr_accessor :age, :reindeer_ranking, :get_mad_at
@@ -40,6 +41,7 @@ class Santa
   # end
 
 end
+
 
 # santas = []
 # sample_ethn = ["black", "Latino", "white", "Japanese", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
