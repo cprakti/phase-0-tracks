@@ -46,6 +46,7 @@ end
 # sample_gend = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
 # sample_ethn.length.times do |i| santas << Santa.new(sample_ethn[i], sample_gend[i]) end
 
+
 # santa = Santa.new("male", "white")
 # puts "Santa identifies as #{santa.gender}."
 # puts "Santa's ethnicity is #{santa.ethnicity}."
@@ -54,6 +55,7 @@ end
 # puts "Santa's current reindeer order is #{santa.reindeer_ranking}."
 # santa.get_mad_at = "Cupid"
 # puts "Santa's new reindeer order is #{santa.reindeer_ranking}."
+
 
 santas = []
 sample_ethn = ["black", "Latino", "white", "Japanese", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
