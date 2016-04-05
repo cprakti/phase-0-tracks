@@ -1,8 +1,13 @@
 class Santa
+  attr_reader :gender, :ethnicity
+  attr_accessor :age, :reindeer_ranking, :get_mad_at
+
   def initialize(gender, ethnicity)
     @gender = gender
     @ethnicity = ethnicity
     puts "This santa identifies as #{@gender} and #{@ethnicity}."
+    @reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+    @age = 0
   end
 
   def speak
@@ -13,14 +18,39 @@ class Santa
     puts "That was a good #{cookie} cookie!"
   end
 
-  @reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+  def celebrate_birthday
+    @age += 1
+  end
 
-  @age = 0
+  def get_mad_at=(mad)
+    reindeer_ranking.delete(mad)
+    reindeer_ranking.push(mad)
+  end
+
+  # def reindeer_ranking
+  #   @reindeer_ranking
+  # end
+
+  # def gender
+  #   @gender
+  # end
+
+  # def ethnicity
+  #   @ethnicity
+  # end
+
 end
 
-santas = []
-sample_ethn = ["black", "Latino", "white", "Japanese", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
-sample_gend = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
-sample_ethn.length.times do |i| santas << Santa.new(sample_ethn[i], sample_gend[i]) end
+# santas = []
+# sample_ethn = ["black", "Latino", "white", "Japanese", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+# sample_gend = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+# sample_ethn.length.times do |i| santas << Santa.new(sample_ethn[i], sample_gend[i]) end
 
-p santas
+santa = Santa.new("male", "white")
+puts "Santa identifies as #{santa.gender}."
+puts "Santa's ethnicity is #{santa.ethnicity}."
+santa.age = 40
+puts "Santa is now #{santa.celebrate_birthday} years old."
+puts "Santa's current reindeer order is #{santa.reindeer_ranking}."
+santa.get_mad_at = "Cupid"
+puts "Santa's new reindeer order is #{santa.reindeer_ranking}."
