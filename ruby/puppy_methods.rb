@@ -23,6 +23,10 @@ class Puppy
     puts "Doggie high-five!"
   end
 
+  def initialize
+    puts "Initializing new puppy instance ..."
+  end
+
 end
 
 fluffy = Puppy.new
