@@ -118,3 +118,29 @@ print_list(bill)
 update_quantity('Ice Cream', 1, bill)
 
 print_list(bill)
+
+
+
+# What did you learn about pseudocode from working on this challenge?
+
+  # I learned that pseudocode is written for other developers to read and understand what you have done.  Instead of writing a vague outline of what will be needed, you should break down your plan of attack specifically but without including any actual code.
+
+# What are the tradeoffs of using arrays and hashes for this challenge?
+
+  # We decided to you use a hash for this challenge in order to store information about the quantity of each item (key).
+
+# What does a method return?
+
+  # A method returns the information from the last line that was run unless you have declared something else to be run.
+
+# What kind of things can you pass into methods as arguments?
+
+  # Methods accept a variety of inputs; anything from strings, numbers, floats, hashes, or arrays can be used as arguments.
+
+# How can you pass information between methods?
+
+  # Using the output from one method as the input of another method, you can pass information from method to method.  Also, you can call a method inside another method.
+
+# What concepts were solidified in this challenge, and what concepts are still confusing?
+
+  # This was a good exercise in pseudocode.  Generally, my solutions are devised by experimenting, but I see the value in creating a plan.  I would like to have more practice with pseudocode and more practice with passing information between methods.
