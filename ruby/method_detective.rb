@@ -34,6 +34,7 @@ p "Elementary  ,    my   dear      Watson!".squeeze(" ")
 
 p "z".ord
 # => 122
+
 # (What is the significance of the number 122 in relation to the character z?)
 # Returns the integer ordinal of a one-character string.
 
