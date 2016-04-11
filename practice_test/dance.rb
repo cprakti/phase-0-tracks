@@ -9,3 +9,9 @@ class Dancer
   end
 
 end
+
+dancer = Dancer.new("Misty Copeland", 33)
+p dancer.name
+p dancer.age
+p dancer.age = 34
+p dancer.age
