@@ -6,9 +6,13 @@
 function reverse(str) {
   var backStr = ""
   for ( var i = str.length; i >= 0; i--) {
-    backStr += str[i];
+    backStr += str.charAt(i);
   }
-  console.log(backStr);
+  return backStr;
 }
 
-reverse("Hello");
+var revHello = reverse("hello");
+
+if (2 > 1) {
+  console.log(revHello);
+}
