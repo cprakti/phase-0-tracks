@@ -19,3 +19,21 @@ names.push("Alexander");
 //print color name
 console.log(names);
 
+
+var horse = {};
+console.log(horse);
+
+for (var i = 0; i < names.length; i++){
+
+  horse.name = names[i]
+  horse.color = color[i]
+
+
+  console.log(horse);
+}
+
+var propertyName = 'name';
+console.log(horse[propertyName]);
+
+var propertyName = 'color';
+console.log(horse[propertyName]);
