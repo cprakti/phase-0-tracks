@@ -32,3 +32,28 @@ for (var i = 0; i < names.length; i++){
 
 }
 console.log(horse);
+
+function Car(make, color, topSpeed) {
+  this.make = make;
+  this.color = color;
+  this.needsGas =  function(answer){
+    if(answer == "yes"){
+      console.log("We Need to stop for gas!!");
+    }else{
+      console.log("Keep Driving tank is full");
+    }
+  };
+
+  this.topSpeed = topSpeed;
+
+};
+
+console.log(Car);
+var newCar = new Car("BMW", "Green", 120);
+console.log(newCar);
+newCar.needsGas("yes");
+
+
+var newCar1 = new Car("Toyota", "Grey", 88);
+console.log(newCar1);
+newCar1.needsGas("no");
