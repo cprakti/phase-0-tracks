@@ -1,3 +1,4 @@
+
 // 3. In your new file, declare two separate arrays:
 // an array of four colors ("blue", for instance, though you're welcome to get crazy with something like "iridescent blue/green with silver sparkles")
 
@@ -8,32 +9,26 @@ var color = ["green", "blue", "light-red", "blackish grey...not black, but not g
 // Write additional code that adds another color to the colors array, and another horse name to the horses array.
 var names = ["Bob", "Horsey", "Secretariat", "Allison"];
 //print color array
-console.log(color);
 
 //pushing new color to array
 color.push("orange");
-
+//console.log(color);
 
 //pushing new name to array
 names.push("Alexander");
 //print color name
-console.log(names);
+//console.log(names);
 
 
+
+//combining names with colors into a new object
 var horse = {};
-console.log(horse);
+//console.log(horse);
 
+//for loop
 for (var i = 0; i < names.length; i++){
 
-  horse.name = names[i]
-  horse.color = color[i]
+  horse[names[i]] = color[i];
 
-
-  console.log(horse);
 }
-
-var propertyName = 'name';
-console.log(horse[propertyName]);
-
-var propertyName = 'color';
-console.log(horse[propertyName]);
+console.log(horse);
