@@ -4,9 +4,10 @@
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
-#
-#
-require_relative 'state_data'
+# Require_relative allows you to access the information from another file and in the same directory.
+# Require allows you to access information with the proper path.
+
+require_relative "state_data"
 
 class VirusPredictor
 
