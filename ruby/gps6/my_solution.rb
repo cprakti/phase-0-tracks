@@ -18,15 +18,16 @@ class VirusPredictor
     @population_density = population_density
   end
 
+
 # This method calls two other methods that use the previously defined instance variables as arguments.  In this case virus_effects gives an estimated number of people lost, white speed_of_spread tells how quickly the virus will spread over time.
   def virus_effects
-    predicted_deaths(@population_density, @population, @state)
-    speed_of_spread(@population_density, @state)
+    predicted_deaths
+    speed_of_spread
   end
 
-  private
+private
 # This method takes variables and runs an algorithm that predicts the number of people of will die.  Based on the population_density, the algorithm sorts the incoming hash and returns the number_of_deaths, which is a product of the total population and a constant.
-  def predicted_deaths(population_density, population, state)
+  def predicted_deaths
     # predicted deaths is solely based on population density
     if @population_density >= 200
       number_of_deaths = (@population * 0.4).floor
@@ -44,7 +45,7 @@ class VirusPredictor
 
   end
 # This method is similar to predicted_deaths in that it sorts the incoming hash based on an algorithm.  In this case, there are different speeds that are added to the speed variable depending on which conditional is met.
-  def speed_of_spread(population_density, state) #in months
+  def speed_of_spread #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
     speed = 0.0
@@ -62,7 +63,7 @@ class VirusPredictor
     end
 
     puts " and will spread across the state in #{speed} months.\n\n"
-
+    # We removed the arguments to this method and the predicted_deaths method to make it more DRY. We tried to think of a DRY-er way of writing the alogrithm but couldn't think a better way.
   end
 
 end
