@@ -94,3 +94,23 @@ end
 
 #=======================================================================
 # Reflection Section
+
+# What are the differences between the two different hash syntaxes shown in the state_data file?
+
+# - The first hash contains key values that are names of states and values that are separate hashes.  Inside each value, the second hash contains a key for population density and its corresponding value as well as a key for population, and its corresponding value.
+
+# What does require_relative do? How is it different from require?
+
+# - Require_relative allows you to access code from another file, provided that it is contained in the same directory, with just the name of the file.  Require allows you to access other code as well but you must specify the path to other file.
+
+# What are some ways to iterate through a hash?
+
+# - You can iterate through a hash using .map or .each methods.  You can use "do" and "end" to specify the block or you can use {}.
+
+# When refactoring virus_effects, what stood out to you about the variables, if anything?
+
+# - Because the variables were turned into attributes in the initialize method, they could be accessed within any additional methods without having to be passed in as arguments.
+
+# What concept did you most solidify in this challenge?
+
+# - This challenge helped clarify how to access different keys and values within a hash or a hash of a hash.  It also helped with getting some practice at refactoring.
