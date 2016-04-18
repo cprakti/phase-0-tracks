@@ -50,6 +50,20 @@ function compare(personOne, personTwo) {
   }
 }
 
+
+// Release 2:
+function stringMaker(n) {
+for (var y=0; y < n; y++) {
+  var text = "";
+  var possible = "abcdefghijklmnopqrstuvwxyz";
+  var x = Math.floor((Math.random() * 10) + 1);
+  for ( var i=0; i < x; i++ ) {
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+  }
+  console.log(text);
+}
+}
+
 // Driver code for Release 0:
 console.log(longestItem(exampleArray));
 console.log(longestItem(fruits));
@@ -58,3 +72,5 @@ console.log(longestItem(sports));
 // Driver code for Release 1:
 compare(personOne,personTwo);
 
+// Driver code for Release 2:
+console.log(stringMaker(4));
