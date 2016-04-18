@@ -6,9 +6,13 @@
 // Return first key
 
 var exampleArray = ["longest phrase", "long phrase", "longer phrase"];
+var fruits = ["apple", "banana", "orange"];
+var sports = ["soccer", "basketball", "golf"];
+
+
+function longestItem(exampleArray) {
 var largestNum = 0;
 var longestStrings = [];
-function longestItem(exampleArray) {
   for ( var i = 0; i < exampleArray.length; i++ ){
     if (exampleArray[i].length > largestNum) {
       largestNum = exampleArray[i].length;
@@ -22,5 +26,6 @@ function longestItem(exampleArray) {
   return longestStrings
 };
 
-
 console.log(longestItem(exampleArray));
+console.log(longestItem(fruits));
+console.log(longestItem(sports));
