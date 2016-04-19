@@ -51,6 +51,8 @@ def decrypt(word)
   alphabet_lowercase = ("a".."z").to_a
   alphabet = alphabet_lowercase + alphabet_uppercase
   decrypted_word = ""
+  alphabet.index("a")
+  word[2]
   while index < word.length
     if word[index] == " "
       decrypted_word += " "
