@@ -1,0 +1,5 @@
+SELECT * FROM restaurants;
+UPDATE restaurants SET kids_menu = "True" WHERE kids_menu = 1;
+SELECT * FROM restaurants, boroughs WHERE restaurants.borough_id = boroughs.id;
+SELECT restaurants.name, restaurants.cuisine, restaurants.capacity, boroughs.name FROM restaurants, boroughs WHERE restaurants.borough_id = boroughs.id;
+DELETE FROM restaurants WHERE name = "Al Di La";
