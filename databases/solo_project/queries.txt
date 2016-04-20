@@ -1,0 +1,127 @@
+Release 2:
+
+
+
+SELECT * FROM restaurants;
+
+1|Fette Sau|BBQ|0|100|2
+2|Al Di La|Italian|1|55|2
+3|Mr. Donahue's|American|1|30|1
+4|King of Falafel|Middle Eastern|0|20|3
+5|Louie & Ernie's Pizza|Pizza|1|33|4
+6|Beso|Spanish|1|60|5
+
+
+
+
+
+UPDATE restaurants SET kids_menu = "True" WHERE kids_menu = 1;
+
+1|Fette Sau|BBQ|False|100|2
+2|Al Di La|Italian|True|55|2
+3|Mr. Donahue's|American|True|30|1
+4|King of Falafel|Middle Eastern|False|20|3
+5|Louie & Ernie's Pizza|Pizza|True|33|4
+6|Beso|Spanish|True|60|5
+
+
+
+
+
+SELECT * FROM restaurants, boroughs WHERE restaurants.borough_id = boroughs.id;
+
+1|Fette Sau|BBQ|False|100|2|2|Brooklyn
+2|Al Di La|Italian|True|55|2|2|Brooklyn
+3|Mr. Donahue's|American|True|30|1|1|Manhattan
+4|King of Falafel|Middle Eastern|False|20|3|3|Queens
+5|Louie & Ernie's Pizza|Pizza|True|33|4|4|Bronx
+6|Beso|Spanish|True|60|5|5|Staten Island
+
+
+
+
+
+SELECT restaurants.name, restaurants.cuisine, restaurants.capacity, boroughs.name FROM restaurants, boroughs WHERE restaurants.borough_id = boroughs.id;
+
+Fette Sau|BBQ|100|Brooklyn
+Al Di La|Italian|55|Brooklyn
+Mr. Donahue's|American|30|Manhattan
+King of Falafel|Middle Eastern|20|Queens
+Louie & Ernie's Pizza|Pizza|33|Bronx
+Beso|Spanish|60|Staten Island
+
+
+
+
+
+DELETE FROM restaurants WHERE name = "Al Di La";
+
+1|Fette Sau|BBQ|False|100|2
+3|Mr. Donahue's|American|True|30|1
+4|King of Falafel|Middle Eastern|False|20|3
+5|Louie & Ernie's Pizza|Pizza|True|33|4
+6|Beso|Spanish|True|60|5
+
+
+
+
+________________________________________________________________________________
+
+
+
+
+Release 3:
+
+
+
+SELECT * FROM restaurants INNER JOIN boroughs ON restaurants.borough_id = boroughs.id;
+
+1|Fette Sau|BBQ|False|100|2|2|Brooklyn
+3|Mr. Donahue's|American|True|30|1|1|Manhattan
+4|King of Falafel|Middle Eastern|False|20|3|3|Queens
+5|Louie & Ernie's Pizza|Pizza|True|33|4|4|Bronx
+6|Beso|Spanish|True|60|5|5|Staten Island
+
+
+
+
+
+SELECT * FROM restaurants LEFT OUTER JOIN boroughs ON restaurants.borough_id = boroughs.id;
+
+1|Fette Sau|BBQ|False|100|2|2|Brooklyn
+3|Mr. Donahue's|American|True|30|1|1|Manhattan
+4|King of Falafel|Middle Eastern|False|20|3|3|Queens
+5|Louie & Ernie's Pizza|Pizza|True|33|4|4|Bronx
+6|Beso|Spanish|True|60|5|5|Staten Island
+
+
+
+
+
+SELECT * FROM restaurants CROSS JOIN boroughs;
+
+1|Fette Sau|BBQ|False|100|2|1|Manhattan
+1|Fette Sau|BBQ|False|100|2|2|Brooklyn
+1|Fette Sau|BBQ|False|100|2|3|Queens
+1|Fette Sau|BBQ|False|100|2|4|Bronx
+1|Fette Sau|BBQ|False|100|2|5|Staten Island
+3|Mr. Donahue's|American|True|30|1|1|Manhattan
+3|Mr. Donahue's|American|True|30|1|2|Brooklyn
+3|Mr. Donahue's|American|True|30|1|3|Queens
+3|Mr. Donahue's|American|True|30|1|4|Bronx
+3|Mr. Donahue's|American|True|30|1|5|Staten Island
+4|King of Falafel|Middle Eastern|False|20|3|1|Manhattan
+4|King of Falafel|Middle Eastern|False|20|3|2|Brooklyn
+4|King of Falafel|Middle Eastern|False|20|3|3|Queens
+4|King of Falafel|Middle Eastern|False|20|3|4|Bronx
+4|King of Falafel|Middle Eastern|False|20|3|5|Staten Island
+5|Louie & Ernie's Pizza|Pizza|True|33|4|1|Manhattan
+5|Louie & Ernie's Pizza|Pizza|True|33|4|2|Brooklyn
+5|Louie & Ernie's Pizza|Pizza|True|33|4|3|Queens
+5|Louie & Ernie's Pizza|Pizza|True|33|4|4|Bronx
+5|Louie & Ernie's Pizza|Pizza|True|33|4|5|Staten Island
+6|Beso|Spanish|True|60|5|1|Manhattan
+6|Beso|Spanish|True|60|5|2|Brooklyn
+6|Beso|Spanish|True|60|5|3|Queens
+6|Beso|Spanish|True|60|5|4|Bronx
+6|Beso|Spanish|True|60|5|5|Staten Island
