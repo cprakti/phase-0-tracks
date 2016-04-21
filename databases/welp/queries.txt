@@ -1,4 +1,6 @@
 
+
+
 Query:
 
 SELECT businesses.name,
