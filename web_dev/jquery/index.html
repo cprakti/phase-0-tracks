@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Test Page for jQuery</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div>
+  <h1>First Header</h1>
+  <p>First paragraph asdf adsf asdf asf sdfa fs sad fdsa fds sdf dgfa df sdga er re ryt gdf dsa sdga.</p>
+
+  <h2>Second Header</h2>
+  <p>Second paragraph...</p>
+
+  <h3>Third Header</h3>
+  <p>Third paragraph...</p>
+</div>
+
+<footer>
+  <img src="http://weknowyourdreamz.com/images/apple/apple-09.jpg">
+</footer>
+
+<script type="text/javascript" src="jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+$('p').on('click', function() {
+  $('img').fadeToggle(2000);
+  });
+});
+</script>
+
+</body>
+</html>
