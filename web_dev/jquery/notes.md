@@ -72,6 +72,7 @@ How is jquery used? (40 min)
         });
       </script>
 
+      The intro to jQuery videos were particularly helpful to see the language used in real time.
 
 Cheatsheet for jquery?(10 min)
 
