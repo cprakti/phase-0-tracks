@@ -17,3 +17,13 @@ Question 3: In your own words, what is a VPS (virtual private server)? What, acc
 Question 4: Optional bonus question: Why is it considered a bad idea to run programs as the root user on a Linux system?
 
 As the root user, you are able to change anything you want without notification from the computer.  In this situation, you would be much more likely to make a costly mistake.  Additionally, the root is less secure, meaning viruses would have access to all parts of your computer.
+
+
+
+Testing Other Properties:
+- opacity = ".7"
+- font-family = "Helvetica"
+- color = "green"
+- letter-spacing = "2px"
+- font-variant= "small-caps"
+- background-color= "orange"
